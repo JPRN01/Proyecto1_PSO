@@ -7,7 +7,6 @@
 #include <sys/stat.h>
 #include <time.h>
 
-// Simula un mapa para los puntos de código Unicode y sus frecuencias.
 // Esta es una simplificación. Para un rango completo de Unicode, considera usar una estructura de datos más adecuada.
 #define MAX_UNICODE_POINTS 0x110000 // Punto de código Unicode máximo + 1
 #define MAX_CODE_LENGTH 32 // Longitud máxima esperada para un código Huffman
