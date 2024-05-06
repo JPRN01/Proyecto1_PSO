@@ -9,7 +9,6 @@
 
 
 // Simula un mapa para los puntos de código Unicode y sus frecuencias.
-// Esta es una simplificación. Para un rango completo de Unicode, considera usar una estructura de datos más adecuada.
 #define MAX_UNICODE_POINTS 0x110000 // Punto de código Unicode máximo + 1
 #define MAX_CODE_LENGTH 32 // Longitud máxima esperada para un código Huffman
 #define MAX_FILENAME_LENGTH 256
@@ -53,9 +52,8 @@ node new_node(int freq, unsigned int codePoint, node a, node b) {
             n->freq = a->freq + b->freq;
         }
     } else {
-        // Manejo de error si malloc falla (puede imprimir un mensaje de error o tomar otras acciones)
+        // Manejo de error si malloc falla
         fprintf(stderr, "Error al asignar memoria para un nuevo nodo\n");
-        // Aquí puedes decidir si devolver NULL o terminar el programa con exit(EXIT_FAILURE);
     }
 
     return n;
